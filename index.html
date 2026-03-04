@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Her Compass — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #7C3AED;
+    --pink: #EC4899;
+    --dark: #1E1B4B;
+    --text: #374151;
+    --muted: #6B7280;
+    --bg: #FAFAFA;
+    --card: #FFFFFF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    color: white;
+    padding: 60px 24px 48px;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+
+  .logo span {
+    font-style: italic;
+    opacity: 0.85;
+    font-size: 1rem;
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  nav {
+    background: white;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  }
+
+  nav a {
+    display: inline-block;
+    padding: 16px 24px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+  }
+
+  nav a:hover, nav a.active {
+    color: var(--purple);
+    border-bottom-color: var(--purple);
+  }
+
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+
+  .page-subtitle {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E5E7EB;
+  }
+
+  .page-subtitle strong {
+    color: var(--purple);
+  }
+
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--dark);
+    margin: 36px 0 12px;
+  }
+
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(var(--purple), var(--pink));
+    border-radius: 2px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  p {
+    color: var(--text);
+    margin-bottom: 16px;
+    font-size: 0.97rem;
+  }
+
+  ul {
+    margin: 12px 0 16px 20px;
+    color: var(--text);
+    font-size: 0.97rem;
+  }
+
+  ul li {
+    margin-bottom: 8px;
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #F5F3FF, #FDF2F8);
+    border-left: 4px solid var(--purple);
+    border-radius: 0 12px 12px 0;
+    padding: 20px 24px;
+    margin: 24px 0;
+  }
+
+  .highlight-box p {
+    margin: 0;
+    font-weight: 500;
+    color: var(--dark);
+  }
+
+  .contact-card {
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    color: white;
+    border-radius: 16px;
+    padding: 32px;
+    margin-top: 48px;
+    text-align: center;
+  }
+
+  .contact-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .contact-card p {
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 20px;
+  }
+
+  .contact-card a {
+    display: inline-block;
+    background: white;
+    color: var(--purple);
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: transform 0.2s;
+  }
+
+  .contact-card a:hover {
+    transform: translateY(-2px);
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid #E5E7EB;
+  }
+
+  footer a { color: var(--purple); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    Her Compass
+    <span>Navigate Every Stage</span>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html" class="active">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="support.html">Support</a>
+</nav>
+
+<div class="container">
+  <h1 class="page-title">Privacy Policy</h1>
+  <p class="page-subtitle">
+    Last updated: <strong>March 4, 2026</strong> &nbsp;·&nbsp; 
+    Effective date: March 4, 2026
+  </p>
+
+  <div class="highlight-box">
+    <p>💜 Your health data is yours. Her Compass stores all personal health information locally on your device. We do not sell, share, or monetize your personal data — ever.</p>
+  </div>
+
+  <h2>Who We Are</h2>
+  <p>Her Compass ("we," "our," or "us") is a menopause and women's health companion app developed by Mark Greenlaw, based in Southern Maine, USA. Our app helps women track symptoms, gain AI-powered insights, and navigate perimenopause and menopause with confidence.</p>
+
+  <h2>Information We Collect</h2>
+  <p>We collect only what is necessary to provide you with a personalized health experience:</p>
+  <ul>
+    <li><strong>Health & Symptom Data</strong> — Symptoms you log, severity ratings, sleep scores, mood scores, and notes. This data is stored locally on your device using Apple's Core Data framework.</li>
+    <li><strong>Profile Information</strong> — Your name, life stage (perimenopause, menopause, post-menopause), and health goals that you provide during onboarding.</li>
+    <li><strong>AI Conversation Data</strong> — Messages you send to the AI Companion are processed by Anthropic's Claude API to generate responses. Conversations are not permanently stored on our servers.</li>
+    <li><strong>Anonymous Usage Analytics</strong> — We use TelemetryDeck, a privacy-first analytics platform, to collect anonymous usage data such as which features are used most. No personally identifiable information is collected in analytics.</li>
+    <li><strong>Purchase Information</strong> — Subscription status is managed by Apple's StoreKit. We do not store your payment information.</li>
+  </ul>
+
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>To provide personalized symptom tracking and health insights</li>
+    <li>To generate your Doctor Visit Report through AI analysis of your logged data</li>
+    <li>To deliver relevant wellness content (nutrition, sleep, mindfulness tips)</li>
+    <li>To improve the app experience through anonymous usage analytics</li>
+    <li>To process subscription purchases and manage your account</li>
+  </ul>
+
+  <h2>Data Storage & Security</h2>
+  <p>Your health data is stored locally on your iPhone using Apple's Core Data framework. It is protected by your device's built-in security (Face ID, Touch ID, passcode). We do not upload your symptom logs, mood data, or personal health information to any external servers.</p>
+  <p>AI Companion messages are transmitted securely over HTTPS to our Cloudflare proxy and then to Anthropic's API. These transmissions are encrypted in transit.</p>
+
+  <h2>Third-Party Services</h2>
+  <p>Her Compass uses the following third-party services:</p>
+  <ul>
+    <li><strong>Anthropic Claude API</strong> — Powers the AI Companion feature. Messages are processed to generate responses. See Anthropic's privacy policy at anthropic.com/privacy.</li>
+    <li><strong>Apple StoreKit</strong> — Manages in-app subscriptions. Apple's privacy policy applies to purchase transactions.</li>
+    <li><strong>TelemetryDeck</strong> — Privacy-first anonymous analytics. No personal data is collected. See telemetrydeck.com/privacy.</li>
+    <li><strong>Cloudflare</strong> — Used as a security proxy for API communications. See cloudflare.com/privacypolicy.</li>
+  </ul>
+
+  <h2>We Never Sell Your Data</h2>
+  <p>We do not sell, rent, trade, or share your personal health information with advertisers, data brokers, or any third parties for commercial purposes. Your health journey is private.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>Her Compass is designed for adults aged 18 and older. We do not knowingly collect information from children under 13. If you believe a child has provided us with personal information, please contact us immediately.</p>
+
+  <h2>Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li>Access all health data stored on your device at any time within the app</li>
+    <li>Delete your data by deleting the app from your device</li>
+    <li>Export your symptom data via the Doctor Report feature</li>
+    <li>Opt out of anonymous analytics by contacting us</li>
+    <li>Cancel your subscription at any time through Apple's subscription settings</li>
+  </ul>
+
+  <h2>Data Retention</h2>
+  <p>Health data is retained on your device until you delete the app or manually clear your history within the app. AI conversation data is not permanently retained on our servers beyond the scope of generating a response.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the app. Continued use of Her Compass after changes constitutes acceptance of the updated policy.</p>
+
+  <h2>California Privacy Rights (CCPA)</h2>
+  <p>California residents have the right to know what personal information we collect, request deletion of personal information, and opt out of the sale of personal information. We do not sell personal information. To exercise your rights, contact us at the email below.</p>
+
+  <div class="contact-card">
+    <h3>Questions about your privacy?</h3>
+    <p>We're here to help. Reach out anytime and we'll respond within 48 hours.</p>
+    <a href="mailto:support@hercompassapp.com">support@hercompassapp.com</a>
+  </div>
+</div>
+
+<footer>
+  © 2026 Her Compass · <a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="support.html">Support</a>
+</footer>
+
+</body>
+</html>

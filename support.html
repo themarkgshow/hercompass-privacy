@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Her Compass — Support</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --purple: #7C3AED; --pink: #EC4899; --dark: #1E1B4B; --text: #374151; --muted: #6B7280; --bg: #FAFAFA; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  header { background: linear-gradient(135deg, var(--purple), var(--pink)); color: white; padding: 60px 24px 48px; text-align: center; }
+  .logo { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700; }
+  .logo span { opacity: 0.85; font-size: 1rem; display: block; font-family: 'DM Sans', sans-serif; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+  nav { background: white; border-bottom: 1px solid #E5E7EB; padding: 0 24px; display: flex; justify-content: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+  nav a { display: inline-block; padding: 16px 24px; color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; border-bottom: 3px solid transparent; transition: all 0.2s; }
+  nav a:hover, nav a.active { color: var(--purple); border-bottom-color: var(--purple); }
+  .container { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+  .page-title { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--dark); margin-bottom: 8px; }
+  .page-subtitle { color: var(--muted); font-size: 0.95rem; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid #E5E7EB; }
+  h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--dark); margin: 36px 0 16px; }
+  h2::before { content: ''; display: inline-block; width: 4px; height: 20px; background: linear-gradient(var(--purple), var(--pink)); border-radius: 2px; margin-right: 10px; vertical-align: middle; }
+  p { color: var(--text); margin-bottom: 16px; font-size: 0.97rem; }
+
+  .faq-item { background: white; border-radius: 12px; border: 1px solid #E5E7EB; margin-bottom: 12px; overflow: hidden; }
+  .faq-question { padding: 20px 24px; font-weight: 500; color: var(--dark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .faq-question:hover { background: #F9F5FF; }
+  .faq-question::after { content: '+'; font-size: 1.4rem; color: var(--purple); font-weight: 300; }
+  .faq-answer { padding: 0 24px 20px; color: var(--text); font-size: 0.95rem; display: none; }
+  .faq-item.open .faq-answer { display: block; }
+  .faq-item.open .faq-question::after { content: '−'; }
+  .faq-item.open .faq-question { background: #F9F5FF; color: var(--purple); }
+
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
+  @media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  .contact-option { background: white; border: 1px solid #E5E7EB; border-radius: 16px; padding: 28px 24px; text-align: center; transition: all 0.2s; }
+  .contact-option:hover { border-color: var(--purple); box-shadow: 0 4px 20px rgba(124,58,237,0.1); transform: translateY(-2px); }
+  .contact-option .icon { font-size: 2rem; margin-bottom: 12px; }
+  .contact-option h3 { font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px; }
+  .contact-option p { font-size: 0.88rem; color: var(--muted); margin-bottom: 16px; }
+  .contact-option a { display: inline-block; background: linear-gradient(135deg, var(--purple), var(--pink)); color: white; padding: 10px 24px; border-radius: 50px; text-decoration: none; font-size: 0.88rem; font-weight: 500; }
+
+  footer { text-align: center; padding: 32px 24px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid #E5E7EB; }
+  footer a { color: var(--purple); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Her Compass <span>Navigate Every Stage</span></div>
+</header>
+
+<nav>
+  <a href="index.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="support.html" class="active">Support</a>
+</nav>
+
+<div class="container">
+  <h1 class="page-title">Support Center</h1>
+  <p class="page-subtitle">We're here to help you navigate your health journey. Find answers below or reach out directly.</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do I start my free trial?</div>
+    <div class="faq-answer">When you first open Her Compass, you'll be guided through onboarding and presented with the option to start your 7-day free trial. Tap "Start 7-Day Free Trial" and follow the prompts. No charge until the trial ends — cancel anytime before then.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do I cancel my subscription?</div>
+    <div class="faq-answer">Subscriptions are managed through Apple. Go to Settings on your iPhone → tap your name → Subscriptions → Her Compass → Cancel Subscription. Cancel at least 24 hours before renewal to avoid being charged.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Is my health data private?</div>
+    <div class="faq-answer">Yes, absolutely. All your symptom logs, mood data, and health information are stored locally on your device. We never upload or sell your personal health data. See our Privacy Policy for full details.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">How does the AI Companion work?</div>
+    <div class="faq-answer">The AI Companion is powered by Anthropic's Claude AI. When you ask a question, it's sent securely to Claude which generates a warm, evidence-based response. Conversations are not permanently stored. The AI provides wellness information only — always consult your doctor for medical advice.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">How do I generate a Doctor Visit Report?</div>
+    <div class="faq-answer">The Doctor Report Generator is available to Her Compass+ subscribers. Go to the My Health tab → scroll to Doctor Report → tap "Generate PDF for your next appointment." Log symptoms regularly for the most comprehensive report.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Can I restore my purchases on a new device?</div>
+    <div class="faq-answer">Yes! Download Her Compass on your new device and sign in with the same Apple ID. Tap "Restore Purchases" on the paywall screen. Your subscription will be restored automatically.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">Is Her Compass a medical app?</div>
+    <div class="faq-answer">Her Compass is a wellness and health tracking tool, not a medical device. The information provided is for general wellness purposes and does not constitute medical advice. Always consult a qualified healthcare professional for medical decisions.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">What iOS version do I need?</div>
+    <div class="faq-answer">Her Compass requires iOS 16 or later. For the best experience we recommend keeping your iPhone updated to the latest iOS version.</div>
+  </div>
+
+  <h2>Contact Us</h2>
+  <p>Can't find what you're looking for? We respond to all inquiries within 48 hours.</p>
+
+  <div class="contact-grid">
+    <div class="contact-option">
+      <div class="icon">📧</div>
+      <h3>Email Support</h3>
+      <p>For account issues, billing questions, or general help</p>
+      <a href="mailto:support@hercompassapp.com">Send Email</a>
+    </div>
+    <div class="contact-option">
+      <div class="icon">🐛</div>
+      <h3>Report a Bug</h3>
+      <p>Found something not working? Let us know and we'll fix it fast</p>
+      <a href="mailto:support@hercompassapp.com?subject=Bug Report">Report Bug</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  © 2026 Her Compass · <a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="support.html">Support</a>
+</footer>
+</body>
+</html>
